@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+
+    <style>
+      #video {
+          
+          
+          background-image: url('img/luxur.jpg');
+          background-size: cover; 
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+  </style>
+  </head>
+
+  
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Blockquote -->
+
+    <blockquote cite="">
+      "Imagination is more important than knowledge. For knowledge is limited,
+      whereas imagination embraces the entire world, stimulating progress,
+      giving birth to evolution."
+      <footer>
+        — Albert Einstein,
+        <cite
+          ><a href="https://www.//" target="_blank"
+            >Nobel Prize Biography</a
+          ></cite
+        >
+      </footer>
+    </blockquote>
+
+    <!-- acronym abbr -->
+    The <abbr title="Hypertext Markup Language">HTML</abbr> was founded in 1948.
+
+    <!-- FigCaption -->
+    <section style="display: flex; justify-content: center">
+      <fieldset>
+        <img src="img/Rectangle 5.png" alt="logo " height="50px" />
+        <figcaption>Portfolio Caption</figcaption>
+      </fieldset>
+    </section>
+    <br />
+
+    <!-- Fieldset section -->
+    <form action="/index.html  ">
+      <fieldset>
+        <legend>
+          Welcome to <span style="color: red; font-weight: 800">Devfinity</span>
+        </legend>
+
+        <!-- Pragraph Tag -->
+        <section>
+          <p>
+            Lorem ipsum
+            <span class="dolor" style="color: red; font-weight: 800"
+              >dolor dolor</span
+            >
+            sit amet consectetur
+          </p>
+          <p>a <sup>2</sup>+ b <sup>2</sup></p>
+          <p>H <sub>2</sub>O <sub>2</sub></p>
+          <p>
+            Lorem
+            <i>
+              ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+              qui in! Repellendus illo consectetur asperiores sunt
+            </i>
+            <u>
+              incidunt laudantium itaque aliquid molestias saepe nobis nisi,
+              voluptas consequatur animi similique, dignissimos rem!</u
+            >
+          </p>
+          <b>Lorem</b>
+          <u>ipsum</u>
+        </section>
+
+        <!-- Form section  -->
+        <form action=""  method="post">
+          <h1>Registration Form</h1>
+          <br />
+
+          <!-- details -->
+          <!--   open always opens the details -->
+          <details >
+            <summary>Detail for Registration</summary>
+            Please fill out the form Carefully
+          </details>
+
+
+          <figure class="img" id="img" style="display: flex;  justify-content: end;">
+            <fieldset>
+              <img src="img/Rectangle 5.png" alt="logo " height="50px" />
+              <figcaption>Portfolio fig</figcaption>
+            </fieldset>
+          </figure>
+
+          <br />
+          <label for="name">First Name</label>
+          <input type="text" id="fname" required name="fname" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Password</label>
+          <input type="password" /> <br />
+
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+          <input type="checkbox" name="auth" value="auth" />
+          <label for="auth"> <q>I amnot a robot </q></label>
+
+          <input type="submit" value="Submit" />
+
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+      </fieldset>
+    </form>
+
+    <!-- Form -->
+    <form id="mainForm">
+      <fieldset name="personalInfo" form="mainForm">
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+      </fieldset>
+    </form>
+
+    <!-- Figure Section -->
+   
+
+    <hr />
+    <!-- bdo -->
+    <section>
+      <bdo dir="rtl">Figure</bdo>
+    </section>
+
+    <section>
+          <label for="Form">Form progress:</label>
+
+      <progress id="form" max="100" value="20">20%</progress>
+</section>
+
+      <section>
+        <label for="range"> Volume</label>
+        <input type="range" name="vol" id="vol" value="50" max="100" min="0">
+      </section>
+    <hr />
+
+    <!-- OL Section -->
+    <section>
+      <h1>Required Documents</h1>
+      <ol type="A" start="4">
+        <li>Full Name</li>
+        <li>Password</li>
+        <li>Pan Card</li>
+      </ol>
+    </section>
+
+    <!-- radio -->
+    <section>
+      <label for="Radio">Gender</label>
+      <input type="radio" name="Male" value="male">
+      <label>Male</label>
+      <input type="radio">Female</input>
+      <input type="radio">Others</input>
+    </section>
+
+
+
+    <!-- Select Section -->
+    <section>
+        <label for="College">Select a College</label> <br>
+      <select name="college" id="college" required>
+        <option value=""></option>
+        <option value="Global" >Global</option>
+        <option value="TCMIT">TCMIT</option>
+        <option value="Nobel" selected>Nobel</option>
+        <option value="VS">VS</option>
+      </select>
+    </section>
+
+    <!-- Video -->
+    <h1>Guideline Video</h1>
+    <div style="display: flex; justify-content: center; margin: 1rem; padding: 20px;" id="video" >
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qpFL7XnymRc?autoplay=1&mute=1&si=4CYhUH4j3BAVMOd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+
+    <!-- Table section -->
+    <section>
+      <table border="1px solid " align="center">
+        
+         
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Roll</th>
+        </tr>
+        <tbody>
+          <td>lorem</td>
+          <td>10</td>
+          <td>1</td>
+
+        </tbody>
+        <tbody>
+          <td>ipsum</td>
+          <td>10</td>
+          <td>2</td>
+
+        </tbody>
+        <tbody>
+          <td>sass</td>
+          <td>10</td>
+          <td>12</td>
+
+        </tbody>
+
+        <caption>List of student </caption>
+      </table>
+    </section>
+
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14130.984867392117!2d85.337284!3d27.6942376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1915496d64a5%3A0xae3ee26a67c2a11f!2sDevfinity%20Nepal!5e0!3m2!1sen!2snp!4v1716889248632!5m2!1sen!2snp" width="1400" height="400" style="border:0; margin-top: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+   
+    <audio controls >
+      
+      <source src="horse.mp3" type="audio/mpeg">
+
+      
+    </audio>
+    <!-- footer section -->
+    <footer style="border: 1px solid; padding:auto; margin:1rem; background-color: black;">
+      <address>
+        <img src="img/Frame 2 1.svg" alt="logo" srcset=""> <br>
+
+        <a href="mailto:bamjan@gmail.com">devfinity@gmail.io</a> <br>
+        <a href="tel:9080808090">9080808090</a>
+      </address>
+    </footer>
+
+    <button aria-label="Close">X</button>
+    <a href="https://www.example.com" aria-label="Visit Example">Click here</a>
+
+  </body>
+
+  <script src="script.js"> </script>
+    
+ 
+</html>
