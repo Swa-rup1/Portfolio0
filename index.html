@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swarup Bamjan</title>
+    <link rel="icon" href="img/logo.svg" >
+
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
 
   <body>
     <!-- Navigation Section -->
 
-    <header class="nav-section flex-around">
-      
+    <header class="nav-section flex-around"  id="nav-section">
       <img src="./img/logo.svg" alt="logo" class="logo" />
 
       <!-- Nav-bar section -->
       <nav class="nav-bar flex-row">
         <ul class="mid-nav flex-row">
           <li><a href="#hero" class="nav-a">HOME</a></li>
-          <li><a href="#" class="nav-a">ABOUT</a></li>
+          <li><a href="#about" class="nav-a">ABOUT</a></li>
           <li><a href="#skills" class="nav-a">SKILLS</a></li>
           <li><a href="#Projects" class="nav-a">PROJECT</a></li>
         </ul>
@@ -34,17 +35,20 @@
       <section class="hero flex-row" id="hero">
         <div class="left">
           <div class="hero-body">
-            <p>
-              <span class="span-subtitle">Hello I’m Swarup</span>
-            </p>
-            <p><span class="span-title">Web Developer</span></p>
+            <span class="span-subtitle">Hello I’m Swarup</span> <br>
+
+            <h1 class="span-title">Web Developer</h1>
             <p class="hero-p">
-              "Skilled in <strong> React </strong> and <strong>Figma</strong>,
-              passionate about crafting exceptional user experiences."
+              "Skilled in
+              <strong> <a href="#Projects" class="strong">React</a> </strong>
+              and <strong><a href="#Projects" class="strong">Figma</a></strong
+              >, passionate about crafting exceptional user experiences."
             </p>
           </div>
 
-          <button type="button" id="hero-btn" class="">ABOUT ME</button>
+          <button type="button" id="hero-btn" class="">
+            <a href="#contact" id="hero-btn-a">Let's Collaborate </a>
+          </button>
 
           <div
             class="hero-icon"
@@ -57,7 +61,45 @@
         </div>
 
         <div class="right">
-          <img src="./img/bio.jpg" alt="profilepic" />
+          <img src="./img/pana.svg" alt="profilepic" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="About " id="about">
+        <h1 class="">ABOUT ME</h1>
+        <div class="aboutsection flex-row">
+          <div class="left-about">
+            <div class="hero-body">
+              <!-- <span class="span-subtitle"> <em>Hello I’m Swarup </strong></span> -->
+
+              <p class="hero-p">
+                A passionate web developer with a knack for creating exceptional
+                user experiences. With a strong foundation in React and Figma, I
+                specialize in building intuitive and visually appealing web
+                applications. 
+                
+              </p>
+              <p class="hero-p">
+                My goal is to blend creativity and technical
+                expertise to deliver projects that not only meet but exceed
+                client expectations. When I'm not coding, you can find me
+                exploring the latest design trends or brainstorming innovative
+                solutions to complex problems.
+              </p>
+            </div>
+
+            <button type="button" id="hero-btn" class="">
+              Let's Collaborate
+            </button>
+
+           
+          </div>
+
+          <div class="right-about">
+            <img src="./img/bio.jpg" alt="profilepic" class="img-about" />
+          </div>
         </div>
       </section>
 
@@ -273,11 +315,11 @@
 
             <div class="div-project">
               <div class="project-body">
-              <span class="span-projects">YUM-YAM</span>
-              <p class="p-projects">
-                Crafting responsive, dynamic websites for engaging user
-                experiences.
-              </p>
+                <span class="span-projects">YUM-YAM</span>
+                <p class="p-projects">
+                  Crafting responsive, dynamic websites for engaging user
+                  experiences.
+                </p>
               </div>
               <button type="button" id="project-btn" class="">
                 Know More ➜
@@ -380,11 +422,13 @@
             <img src="./img/github.png" alt="git" style="height: 20px" />
           </div>
         </div>
-        <hr />
+        <hr style="width: 50%;" />
         <p class="footer-copyright" style="text-align: center">
           <em>© 2024 Swarup Bamjan. All rights reserved. </em>
         </p>
       </footer>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
