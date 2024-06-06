@@ -4,38 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swarup Bamjan</title>
-    <link rel="icon" href="img/logo.svg" >
+    <link rel="icon" href="img/logo.svg" />
 
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
   <body>
     <!-- Navigation Section -->
 
-    <header class="nav-section flex-around"  id="nav-section">
+    <header class="nav-section flex-around" id="nav-section">
       <img src="./img/logo.svg" alt="logo" class="logo" />
 
+      <!-- Hamburger menu button -->
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       <!-- Nav-bar section -->
-      <nav class="nav-bar flex-row">
-        <ul class="mid-nav flex-row">
+      <nav class="nav-bar flex-row" id="nav-desktop">
+        <div>
+          <ul class="mid-nav flex-row">
+            <li><a href="#hero" class="nav-a">HOME</a></li>
+            <li><a href="#about" class="nav-a">ABOUT</a></li>
+            <li><a href="#skills" class="nav-a">SKILLS</a></li>
+            <li><a href="#Projects" class="nav-a">PROJECT</a></li>
+          </ul>
+        </div>
+        <div class="nav-contact">
+          <ul class="right-nav">
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav-bar section -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mid-nav flex-column">
           <li><a href="#hero" class="nav-a">HOME</a></li>
           <li><a href="#about" class="nav-a">ABOUT</a></li>
           <li><a href="#skills" class="nav-a">SKILLS</a></li>
           <li><a href="#Projects" class="nav-a">PROJECT</a></li>
-        </ul>
-
-        <ul class="right-nav">
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Container -->
 
     <main class="Container">
       <!-- Hero Section -->
       <section class="hero flex-row" id="hero">
         <div class="left">
           <div class="hero-body">
-            <span class="span-subtitle">Hello I’m Swarup</span> <br>
+            <span class="span-subtitle">Hello I’m Swarup</span> <br />
 
             <h1 class="span-title">Web Developer</h1>
             <p class="hero-p">
@@ -61,48 +84,47 @@
         </div>
 
         <div class="right">
-          <img src="./img/pana.svg" alt="profilepic" />
+          <img src="./img/pana.svg" alt="profilepic" id="bg-pic" />
         </div>
       </section>
+    </main>
 
-      <!-- About Section -->
+    <!-- About Section -->
 
-      <section class="About " id="about">
-        <h1 class="">ABOUT ME</h1>
-        <div class="aboutsection flex-row">
-          <div class="left-about">
-            <div class="hero-body">
-              <!-- <span class="span-subtitle"> <em>Hello I’m Swarup </strong></span> -->
+    <section class="About" id="about">
+      <h1 class="">ABOUT ME</h1>
+      <div class="aboutsection flex-row">
+        <div class="left-about">
+          <div class="hero-body">
+            <!-- <span class="span-subtitle"> <em>Hello I’m Swarup </strong></span> -->
 
-              <p class="hero-p">
-                A passionate web developer with a knack for creating exceptional
-                user experiences. With a strong foundation in React and Figma, I
-                specialize in building intuitive and visually appealing web
-                applications. 
-                
-              </p>
-              <p class="hero-p">
-                My goal is to blend creativity and technical
-                expertise to deliver projects that not only meet but exceed
-                client expectations. When I'm not coding, you can find me
-                exploring the latest design trends or brainstorming innovative
-                solutions to complex problems.
-              </p>
-            </div>
-
-            <button type="button" id="hero-btn" class="">
-              Let's Collaborate
-            </button>
-
-           
+            <p class="hero-p">
+              A passionate web developer with a knack for creating exceptional
+              user experiences. With a strong foundation in React and Figma, I
+              specialize in building intuitive and visually appealing web
+              applications.
+            </p>
+            <p class="hero-p">
+              My goal is to blend creativity and technical expertise to deliver
+              projects that not only meet but exceed client expectations. When
+              I'm not coding, you can find me exploring the latest design trends
+              or brainstorming innovative solutions to complex problems.
+            </p>
           </div>
 
-          <div class="right-about">
-            <img src="./img/bio.jpg" alt="profilepic" class="img-about" />
-          </div>
+          <button type="button" id="hero-btn" class="">
+            Let's Collaborate
+          </button>
         </div>
-      </section>
 
+        <div class="right-about">
+          <img src="./img/bio.jpg" alt="profilepic" class="img-about" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Container -->
+    <main class="Container">
       <!-- Services Section -->
       <section class="services">
         <h1 class="">SERVICES</h1>
@@ -117,7 +139,9 @@
                 experiences.
               </p>
             </div>
-            <button class="btn-card">Know more ➜</button>
+            <button type="button" id="btn-card" class="">
+              Know More &#10140;
+            </button>
           </div>
           <div class="card card2">
             <img src="./img/uiux.png" alt="uiux" />
@@ -128,7 +152,9 @@
                 for enhanced user usuability.
               </p>
             </div>
-            <button class="btn-card">Know more ➜</button>
+            <button type="button" id="btn-card" class="">
+              Know More &#10140;
+            </button>
           </div>
           <div class="card card3">
             <img src="./img/product.png" alt="webdev" />
@@ -139,7 +165,9 @@
                 experiences.
               </p>
             </div>
-            <button class="btn-card">Know more ➜</button>
+            <button type="button" id="btn-card" class="">
+              Know More &#10140;
+            </button>
           </div>
         </div>
       </section>
@@ -149,7 +177,7 @@
         <h1 class="">SKILLS</h1>
 
         <div class="skillscard">
-          <div class="scard card1">
+          <div class="scard skill-1">
             <img
               src="./img/html.png"
               class="skills-img"
@@ -161,7 +189,7 @@
               <p class="p-card" title="HTML is language">HTML</p>
             </div> -->
           </div>
-          <div class="scard card2">
+          <div class="scard skill-2">
             <img
               src="./img/css-3.png"
               class="skills-img"
@@ -174,7 +202,7 @@
             </div> -->
           </div>
 
-          <div class="scard card3">
+          <div class="scard skill-3">
             <img src="./img/js.png" class="skills-img" alt="JS" title="JS" />
 
             <!-- <div class="card-body">
@@ -182,7 +210,7 @@
             </div> -->
           </div>
 
-          <div class="scard card4">
+          <div class="scard skill-4">
             <img
               src="./img/react.png"
               class="skills-img"
@@ -194,7 +222,7 @@
               <p class="p-card" title="React is library">React</p>
             </div> -->
           </div>
-          <div class="scard card5">
+          <div class="scard skill-5">
             <img
               src="./img/github.png"
               class="skills-img"
@@ -206,7 +234,7 @@
               <p class="p-card">Product Design</p>
             </div> -->
           </div>
-          <div class="scard card6">
+          <div class="scard skill-6">
             <img
               src="./img/figma.png"
               class="skills-img"
@@ -226,6 +254,7 @@
         <h1 class="">Projects</h1>
 
         <div class="projectcard">
+          <!-- Hamro Bazar -->
           <div class="project project1">
             <img src="./img/HamroBazar.jpg" alt="hamro-bazar" id="hamrobazar" />
 
@@ -237,10 +266,11 @@
                   experiences.
                 </p>
               </div>
-              <button id="project-btn" class="">Know More ➜</button>
+              <button id="project-btn" class="">Know More &#10140;</button>
             </div>
           </div>
 
+          <!-- Company-Darta -->
           <div class="project project2">
             <img src="./img/Companydarta.jpg" alt="cdarta" />
 
@@ -253,11 +283,12 @@
                 </p>
               </div>
               <button type="button" id="project-btn" class="">
-                Know More ➜
+                Know More &#10140;
               </button>
             </div>
           </div>
 
+          <!-- Tropical Tanspa -->
           <div class="project project3">
             <img src="./img/TROPICAL.jpg" alt="" />
 
@@ -270,11 +301,12 @@
                 </p>
               </div>
               <button type="button" id="project-btn" class="">
-                Know More ➜
+                Know More &#10140;
               </button>
             </div>
           </div>
 
+          <!-- Dechen -->
           <div class="project project4">
             <img src="./img/Deechnen.jpg" alt="" />
 
@@ -288,10 +320,12 @@
                 </p>
               </div>
               <button type="button" id="project-btn" class="">
-                Know More ➜
+                Know More &#10140;
               </button>
             </div>
           </div>
+
+          <!-- Baby UI -->
 
           <div class="project project5">
             <img src="./img/BabyCareUI.jpg" alt="" />
@@ -305,10 +339,12 @@
                 </p>
               </div>
               <button type="button" id="project-btn" class="">
-                Know More ➜
+                Know More &#10140;
               </button>
             </div>
           </div>
+
+          <!-- YUMTAM -->
 
           <div class="project project6">
             <img src="./img/YUMTAM.jpg" alt="" />
@@ -322,13 +358,26 @@
                 </p>
               </div>
               <button type="button" id="project-btn" class="">
-                Know More ➜
+                Know More &#10140;
               </button>
             </div>
           </div>
         </div>
       </section>
+    </main>
 
+    <section class="advertisment">
+      <div class="ad-left">
+        <p class="ad-p">I`m Available For Freelance Works.</p>
+      </div>
+
+      <div class="ad-right">
+        <button type="button" id="ad-btn">Hire Me Now</button>
+      </div>
+    </section>
+
+    <!-- Container -->
+    <main class="Container">
       <!-- Contact Section -->
 
       <section class="Contact" id="contact">
@@ -368,7 +417,23 @@
               />
             </fieldset>
 
+            <label for="services">Select your Service</label>
             <div class="form-service">
+              <div class="option-1">
+                <label for="Web-design">Web-design</label>
+                <input type="checkbox" name="Web-design" id="check-input" />
+              </div>
+              <div class="option-2">
+                <label for="UI-UX">UI Design</label>
+                <input type="checkbox" name="UI-UX" id="check-input" />
+              </div>
+              <div class="option-3">
+                <label for="productdesign">Product Design</label>
+                <input type="checkbox" name="productdesign" id="check-input" />
+              </div>
+            </div>
+
+            <!-- <div class="form-service">
               <label for="services">Select your Service</label>
               <br />
               <select name="Services" id="services">
@@ -377,7 +442,7 @@
                 <option value="UI-UX">UI Design</option>
                 <option value="productdesign">Product Design</option>
               </select>
-            </div>
+            </div> -->
 
             <textarea
               name="message"
@@ -390,45 +455,58 @@
             <div><button type="submit" class="form-btn">Inquiry</button></div>
           </form>
 
-          <hr style="color: var(--green)" />
+          <!-- <hr style="color: var(--green)" />
 
           <div class="contact-p">
             <span class="span-form">Contact Form</span>
             <p class="p-form">LETS WORK TOGETHER ON YOUR NEXT PROJECT.</p>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <!-- Footer Section -->
       <footer class="footer">
         <div class="footer-head">
-          <div class="footer-logo">
+          <div class="footer-logo grid-item" data-order="1">
             <img src="./img/logo.svg" alt="logo" style="height: 30px" />
             <br />
-            <span><em>Swarup Bamjan</em></span>
+            <span class="footer-title"><em>Swarup Bamjan</em></span>
           </div>
 
-          <div class="footer-nav">
+          <div class="footer-nav grid-item" data-order="2">
             <ul class="footer-ul">
-              <li class="footer-li">Home</li>
-              <li class="footer-li">ABOUT</li>
-              <li class="footer-li">SKILLS</li>
-              <li class="footer-li">PROJECT</li>
+              <li class="footer-li"><a href="#hero" class="nav-a">Home</a></li>
+              <li class="footer-li">
+                <a href="#about" class="nav-a">About</a>
+              </li>
+
+              <li class="footer-li">
+                <a href="#skills" class="nav-a">Skills</a>
+              </li>
+
+              <li class="footer-li">
+                <a href="#Projects" class="nav-a">Project</a>
+              </li>
+
+              <li class="footer-li"><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="footer-icon">
+          <div class="footer-icon grid-item" data-order="3">
             <img src="./img/figma.png" alt="fig" style="height: 20px" />
             <img src="./img/github.png" alt="git" style="height: 20px" />
           </div>
         </div>
-        <hr style="width: 50%;" />
-        <p class="footer-copyright" style="text-align: center">
-          <em>© 2024 Swarup Bamjan. All rights reserved. </em>
-        </p>
+        <hr style="width: 50%" />
+
+        <div class="divider-p">
+          <p class="footer-copyright" style="text-align: center">
+            <em>© 2024 Swarup Bamjan. All rights reserved. </em>
+          </p>
+        </div>
       </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
